@@ -73,7 +73,14 @@
       <section>
         <h2>Hópur</h2>
         <ul>
-          <li><p>Fjöldi í hóp <input type="number" required step="1" min="1" max="69"/></p>
+
+
+          <li>
+            <label for="hópstærð">Fjöldi í hóp</label>
+            <input type="number" id="hópstærð" name="hópstærð" required step="1" min="1" max="69"/>
+          </li>
+          <li>
+            <p>Fjöldi í hóp <input type="number" required step="1" min="1" max="69"/></p>
           </li>
           <li><p>Upplýsingar um hóp</p>
             <input type="text" required size="69"/>
@@ -94,9 +101,6 @@
           <li>
             <label for="komudagur">Hvenær viljið þið koma?</label>
             <input type="date" id="komudagur" name="komudagur" required>
-          </li>
-          <li>
-            <p>Hvenær viljið þið koma? <input type="date"></p>
           </li>
         <!-- virkar ekki rétt
           <li><p>Klukkan hvað? <input type="time" step="1800" min="10:00" max="17:00" required></p></li>
