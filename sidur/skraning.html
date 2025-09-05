@@ -91,7 +91,12 @@
       <section>
         <h2>Dagsetning og tími</h2>
         <ul>
-          <li><p>Hvenær viljið þið koma? <input type="date"></p>
+          <li>
+            <label for="komudagur">Hvenær viljið þið koma?</label>
+            <input type="date" id="komudagur" name="komudagur" required>
+          </li>
+          <li>
+            <p>Hvenær viljið þið koma? <input type="date"></p>
           </li>
         <!-- virkar ekki rétt
           <li><p>Klukkan hvað? <input type="time" step="1800" min="10:00" max="17:00" required></p></li>
