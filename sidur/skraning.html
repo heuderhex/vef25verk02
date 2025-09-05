@@ -93,10 +93,46 @@
         <ul>
           <li><p>Hvenær viljið þið koma? <input type="date"></p>
           </li>
-        <li><p>Klukkan hvað? <input type="time" step="1800" min="10:00" max="17:00" required></p>
-        </li>
-        <li><p>Hve lengi?</p>
-        </li>
+        <!-- virkar ekki rétt
+          <li><p>Klukkan hvað? <input type="time" step="1800" min="10:00" max="17:00" required></p></li>
+        --> 
+          <li>
+            <p>Klukkan hvað?
+              <select name="tímasetning" required>
+                <option value="">Velja tímasetningu</option>
+                <option value="10:00">10:00</option>
+                <option value="10:30">10:30</option>
+                <option value="11:00">11:00</option>
+                <option value="11:30">11:30</option>
+                <option value="12:00">12:00</option>
+                <option value="12:30">12:30</option>
+                <option value="13:00">13:00</option>
+                <option value="13:30">13:30</option>
+                <option value="14:00">14:00</option>
+                <option value="14:30">14:30</option>
+                <option value="15:00">15:00</option>
+                <option value="15:30">15:30</option>
+                <option value="16:00">16:00</option>
+                <option value="16:30">16:30</option>
+                </select></p>
+          </li>
+          <li>
+            <p>Hve lengi?
+              <select name="lengd" required>
+                <option value="">Velja tímalengd</option>
+                <option value="0:30">0:30</option>
+                <option value="1:00">1:00</option>
+                <option value="1:30">1:30</option>
+                <option value="2:00">2:00</option>
+                <option value="2:30">2:30</option>
+                <option value="3:00">3:00</option>
+                <option value="3:30">3:30</option>
+                <option value="4:00">4:00</option>
+                <option value="4:30">4:30</option>
+                <option value="5:00">5:00</option>
+                </select>
+              Mælt er með að taka tvær klukkustundir eða lengur fyrir sýningar í sal 1</p>
+            </li>
         </ul>
       </section>
       
